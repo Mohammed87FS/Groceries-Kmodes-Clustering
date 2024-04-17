@@ -17,7 +17,7 @@ library(ggplot2)
 
 
 
-my_data <- read.csv('Complete2.csv', stringsAsFactors = TRUE)
+my_data <- read.csv('Complete.csv', stringsAsFactors = TRUE)
 km_data <- my_data[, c('Marke', 'Produktart', 'Verpackungsart', 'Material')]
 km_data[] <- lapply(km_data, factor)
 
